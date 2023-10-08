@@ -15,14 +15,16 @@ test("Greed renders connectly_2", () => {
   expect(textElement).toBeInTheDocument();
 });
 
-test("Greet renders with a name", () => {
-  render(<Greet name="Patryk" />);
-  const textElement = screen.getByText("Hello2 Patryk");
-  expect(textElement).toBeInTheDocument();
+describe("Greet2", () => {
+  test("Greet renders with a name JS", () => {
+    render(<Greet2 name="Patryk" />);
+    const textElement = screen.getByText("Hello2 Patryk");
+    expect(textElement).toBeInTheDocument();
+  });
 });
 
-test("Greet renders with a name JS", () => {
-  render(<Greet2 name="Patryk" />);
+test("Greet renders with a name", () => {
+  render(<Greet name="Patryk" />);
   const textElement = screen.getByText("Hello2 Patryk");
   expect(textElement).toBeInTheDocument();
 });
